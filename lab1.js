@@ -21,7 +21,7 @@ function rec(u, c) {
 				else old.push(l[i]);
 			}
 			if (c < depth) {
-				for (var i = 0; i < 30; i++) {
+				for (var i = 0; i < Math.min(30, l.length); i++) {
 					v = l[i].substring(9);
 					rec(u+v, c);
 				}
